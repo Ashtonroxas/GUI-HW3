@@ -6,7 +6,7 @@ File: script.js
 GUI Assignment:
     Generates a dynamic multiplication table with validation and a purple gradient theme.
 
-Ashton Roxas, UMass Lowell Computer Science, ashton_roxas@student.uml.edu
+Ashton Roxas, UMass Lowell Computer Science
 */
 
 const form = document.getElementById("rangeForm");
