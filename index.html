@@ -1,0 +1,58 @@
+<!-- 
+Name: Ashton Roxas
+Date: 10/26/2025
+File: index.html
+
+GUI Assignment:
+    This assignment creates a dynamic multiplication table using user-defined input ranges.
+    It focuses on JavaScript fundamentals, DOM manipulation, and graceful input validation.
+
+Ashton Roxas, UMass Lowell Computer Science, ashton_roxas@student.uml.edu
+Copyright (c) 2025 by Ashton Roxas. All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+    <main class="container">
+        <h1>Dynamic Multiplication Table</h1>
+
+        <section class="input-card">
+            <h2>Dynamic Multiplication Table</h2>
+            <form id="rangeForm">
+                <div class="input-row">
+                    <label for="colStart">Column Start</label>
+                    <input type="number" id="colStart" required />
+                </div>
+                <div class="input-row">
+                    <label for="colEnd">Column End</label>
+                    <input type="number" id="colEnd" required />
+                </div>
+                <div class="input-row">
+                    <label for="rowStart">Row Start</label>
+                    <input type="number" id="rowStart" required />
+                </div>
+                <div class="input-row">
+                    <label for="rowEnd">Row End</label>
+                    <input type="number" id="rowEnd" required />
+                </div>
+                <button type="submit" class="generate-btn">Generate Table</button>
+            </form>
+            <p id="errorMsg"></p>
+        </section>
+
+        <section id="tableWrapper">
+            <!-- Table dynamically inserted here -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
